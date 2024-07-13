@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/chat.css">
+    <title>Site Web de Commandes</title>
+</head>
+<body>
+    <h1>Bienvenue sur le site de commandes</h1>
+    
+    <h2>Ajouter un client</h2>
+    <form action="ajouter_client.php" method="POST">
+        <label for="nom_cli">Nom:</label>
+        <input type="text" name="nom_cli" id="nom_cli" required>
+
+        <label for="prenom_cli">Prénom:</label>
+        <input type="text" name="prenom_cli" id="prenom_cli" required>
+
+        <label for="adresse">Adresse:</label>
+        <input type="text" name="adresse" id="adresse" required>
+
+        <label for="telephone">Téléphone:</label>
+        <input type="tel" name="telephone" id="telephone" required>
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required>
+
+        <input type="submit" value="Ajouter le client">
+    </form>
+
+    <h2>Ajouter une commande</h2>
+    <form action="ajouter_commande.php" method="POST">
+        <label for="date_achat">Date d'achat:</label>
+        <input type="date" name="date_achat" id="date_achat" required>
+
+        <label for="montant_total">Montant total:</label>
+        <input type="number" step="0.01" name="montant_total" id="montant_total" required>
+
+        <label for="id_cli">ID du client:</label>
+        <input type="number" name="id_cli" id="id_cli" required>
+
+        <input type="submit" value="Ajouter la commande">
+    </form>
+
+    <h2>Ajouter un produit</h2>
+    <form action="ajouter_produit.php" method="POST">
+        <label for="nom">Nom:</label>
+        <input type="text" name="nom" id="nom" required>
+
+        <label for="prix">Prix:</label>
+        <input type="number" step="0.01" name="prix" id="prix" required>
+
+        <label for="image">Image:</label>
+        <input type="file" name="image" id="image" required>
+
+        <input type="submit" value="Ajouter le produit">
+    </form>
+</body>
+</html>

@@ -1,0 +1,67 @@
+/* Réinitialisation des styles par défaut */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Styles de base */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f1f1;
+  }
+  
+  h1 {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+  }
+  
+  .contact {
+    max-width: 400px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .contactform input[type="text"],
+  .contactform input[type="password"],
+  .contactform input[type="number"],
+  .contactform input[type="email"],
+  .contactform input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .contactform input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .btn {
+    display: block;
+    width: 100px;
+    margin: 10px auto;
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+  }
+  
+  .btn:hover {
+    background-color: #555;
+  }
+  

@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: #8855e9;
+}
+.input_add{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.input_add form{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.4);
+    border-radius: 6px;
+}
+.input_add form input[type= "texte"]{
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    border-radius: 6px;
+    outline: 0;
+    padding: 5px;
+    margin-bottom: 10px;
+}textarea{
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    border-radius: 6px;
+    outline: 0;
+    padding: 5px;
+    margin-bottom: 10px;
+    resize: none;
+}
+.input_add form input[type= "file"]{
+    margin-bottom: 15px;
+}
+.btn-liste-prod ,.input_add form input[type= "submit"]{
+    padding:  5px 8px;
+    border: 0;
+    outline: 0;
+    background-color: #8855e9;
+    color: #fff;
+    border-radius: 6px;
+    font-size: 14px;
+}
+.btn-liste-prod{
+    text-decoration: 0;
+    text-align: center;
+    margin-top: 10px;
+}
+.result{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.result-content{
+    background-color: #fff;
+    width: 40%;
+    border: 6px;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.4);
+}
+.result-content a{
+    color: #8855e9;
+    text-decoration: 0;
+}
+.result-content a:hover{
+    text-decoration: underline;
+}::-webkit-scrollbar{
+    width: 8px;
+    height: 5px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #ccc;
+}
+.result-content h3{
+    text-align: center;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+.liste-produits{
+    max-height: 400px;
+    overflow: auto;
+}
+.produit{
+    margin: 20px 0;
+    height: 100px;
+    display: flex;
+}
+.produit .image-prodimg{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.produit .text{
+    margin-left: 15px;
+    overflow: hidden;
+    width: 80%;
+}
+.produit .text .prix{
+    text-transform: uppercase;
+}
+.produit .text .nom{
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 16px;
+}
+
+
+
+
+
+
+
+
+
+@media(max-width:745px){
+    .result-content{
+        width: 80%;
+    }
+}

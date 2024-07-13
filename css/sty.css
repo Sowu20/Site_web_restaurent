@@ -1,0 +1,432 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+P{
+    font-weight: 300;
+    color: #111;
+}
+header{
+    color: #555;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    padding: 20px;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: space-evenly ;
+    align-items: center;
+    transition: 0.5s;
+}
+.logo{
+    color: #a4b8ee;
+    font-weight: bold;
+    font-size: 2em;
+    text-decoration: none;
+}
+.logo span{
+    color: #fb911f;
+
+}
+.navbar{
+    display: flex;
+    position: relative;
+}
+.navbar li{
+    list-style: none;
+}
+.navbar a{
+    color: #111;
+    text-decoration: none;
+    margin-left: 30px;
+    font-size: 700;
+}
+.btn_reserve{
+    padding: 10px 20px;
+    background: #9bbba0;
+    margin-top: -10px;
+    text-transform: uppercase;
+}
+.btn_reserve:hover{
+    background: #fb911f;
+    transition: ease-out;
+}
+header .navbar li a:hover{
+    color: #fb911f;
+    border-bottom: 2px solid #fb911f;
+    text-transform: capitalize;
+}
+.banniere{
+    position:relative;
+    width: 100%;
+    min-height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image:url(photos/OIP\ \(3\).jpeg);
+    background-size:100cqmax;
+}
+.banniere .contenu{
+    max-width: 70%;
+    text-align: center;
+}
+.banniere .contenu h2{
+    color: #fff;
+    font-size: 3em;
+    text-transform: capitalize;
+}
+.contenu p:nth-child(2){
+    color: #fff;
+    font-size: 1.2em;
+}
+.btn1{
+    font-size: 1em;
+    color: #fff;
+    background: #fb911f;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    margin-left: 10px;
+
+}
+.btn2{
+    font-size: 1em;
+    color: #fff;
+    background: #3322c7;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    margin-left: 10px;
+
+}
+.btn1:hover{
+    letter-spacing: 4px;
+}
+section{
+    padding: 100px;
+}
+.row{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.row .col50{
+    position: relative;
+    width: 41%;
+    justify-content: center;
+    align-items: center;
+}
+.row .col50 h2{
+    margin-bottom: 20px;
+}
+.titre-texte{
+    color: #111;
+    font-size: 2em;
+    font-weight: 300px;
+    text-transform: capitalize;
+}
+.titre-texte span{
+    color: #fb911f;
+    font-size: 1.5em;
+    font-weight: 700px;
+}
+.row .col50 img{
+    height: 450px;
+    width: 600px;
+    position: relative;
+}
+.titre{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.menu{
+    margin: -100px;
+}
+.menu .contenu{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 40px;
+}
+.menu .contenu .box{
+    width: 350px;
+    margin:20px;
+    border: 20px solid#fff;
+    box-shadow: 20px 15px 35px rgba(0,0,0,0.8);
+}
+.menu .contenu .box .inbox{
+    position: relative;
+    width: 100%;
+
+}
+.menu .contenu .box .inbox img{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    animation: glisse 15s infinite ease; 
+}
+.menu .contenu .box .text{
+    text-align: center;
+    font-weight: 300px;
+    color: #111;
+}
+.menu .contenu .box .text h3{
+    font-size: 400;
+}
+
+.expert{
+    margin: -100px;
+
+}
+.expert .contenu{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 40px;
+}
+.expert .contenu .box{
+    width: 300px;
+    margin:15px;
+}
+.expert .contenu .box img{
+    position: relative;
+    width: 100%;
+    height: 100px;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+.expert .contenu .box .text h3{
+    color: #111;
+    font-size: 400;
+}
+
+.expert .contenu .box .inbox{
+    position: relative;
+    width: 100%;
+}
+.expert .contenu .box .inbox img{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:200px;
+    object-fit: cover;
+}
+.expert .contenu .box .text{
+    text-align: center;
+    font-weight: 300px;
+    color: #111;
+}
+.contenu2{
+    display: flex;
+}
+.témoignage{
+    background-image:url(photos/p.jpeg);
+    background-size: cover;
+
+}
+.témoignage .contenu{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 40px;
+    margin: 10px;
+    margin-top: 27;
+    width: 27%;
+    align-items: center;
+    flex-direction: row;
+}
+.témoignage .contenu2 .box{
+    width: 340;
+    margin: 20px;
+    background: #fff;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    border-radius: 15px;
+    padding: 40px;
+}
+.témoignage .contenu2 .box .inbox{
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    
+   
+}
+.témoignage .contenu2 .box .inbox img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.témoignage .contenu2 .box .text{
+    text-align: center;
+    color: #646;
+    font-style: italic;
+}
+.témoignage .contenu .box .text h3{
+    color: #fb911f;
+    margin: 20px;
+    font-size: 1em;
+    font-weight: 600;
+}
+.blanc .titre-texte{
+    color: #0c0c0c;
+}
+.blanc .titre-texte,
+.blanc p{
+    color: #131212;
+}
+
+.contact{
+    background-image: url(./photos/dx.jpeg);
+    background-size: cover;
+    background: 2px 2px 12px rgba(0, 0, 0, 0.8);
+    width: 100%;
+    background-position: unset;
+}
+.contactform{
+    padding: 75px 50px;
+    background: #fff;
+    box-shadow: 5px 15px 50px rgba(0, 0, 0, 0.8);
+    max-width: 500px;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 35%;
+}
+
+.contactform .inputboite{
+    position: relative;
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+.contactform .inputboite input,
+.contactform .inputboite textarea{
+    width: 100%;
+      border: 1px solid #555;
+      padding: 10px;
+      color: #111;
+      outline: none;
+      font-size: 16px;
+      font-weight: 300;
+      resize: none;
+}
+.contactform h3{
+    color: #111;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.contactform .inputboite input[type="submit"]{
+    font-size: 1em;
+    font-weight: 700;
+    color: #fff;
+    background: #fb911f;
+    display: inline-block;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    outline: none;
+    border: none;
+    transition: 0.5s;
+    max-width: 120px;
+    align-items: center; 
+}
+.copyright{
+    padding: 20px 40px;
+    border-top: 2px solid rgba(0, 0, 0, 0.8);
+    background: rgba(228, 222, 222,);
+    text-align: center;
+}
+.copyright p:nth-child(1){
+    color: #333;
+}
+.copyright a {
+    color: #fb911f;
+    text-decoration: none;
+    font-weight: 600;
+    font-style: italic;
+}
+.contact .titre-texte span{
+    color: #fb911f;
+    font-size: 2em;
+}
+header.sticky{
+    background: #fff;
+    padding: 10px 10px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.8);
+}
+header.sticky .logo{
+    color: #111;
+}
+h1{
+    font-size: 80px;
+    font-family: merienda;
+}
+h1:before{
+    content: 'Bienvenue';
+    font-size: 70%;
+    animation: animate 10s infinite;
+color: rgb(255, 140, 0);
+}
+@keyframes animate{
+    0%{
+        font-size: 600px;
+        opacity: 1;
+    }
+    25%{
+        font-size: 50px;
+        opacity: 0;
+    }
+    50%{
+        font-size: 60px;
+        opacity: 1;
+    }
+    65%{
+        font-size: 50px;
+        opacity: 0;
+    }
+    80%{
+        font-size: 60px;
+        opacity: 1;
+    }
+    90%{
+        font-size: 50px;
+        opacity: 0;
+    }
+    100%{
+        font-size: 50px;
+        opacity: 0;
+    }
+}

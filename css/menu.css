@@ -1,0 +1,79 @@
+
+section{
+    padding: 100px;
+}
+.row{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.row .col50{
+    position: relative;
+    width: 41%;
+    justify-content: center;
+    align-items: center;
+}
+.row .col50 h2{
+    margin-bottom: 20px;
+}
+.titre-texte{
+    color: #111;
+    font-size: 2em;
+    font-weight: 300px;
+    text-transform: capitalize;
+}
+.titre-texte span{
+    color: #1311b4;
+    font-size: 1.5em;
+    font-weight: 700px;
+}
+.row .col50 img{
+    height: 450px;
+    width: 600px;
+    position: relative;
+}
+.titre{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.menu{
+    margin: -100px;
+}
+.menu .contenu{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 40px;
+}
+.menu .contenu .box{
+    width: 240px;
+    margin:15px;
+    border: 20px solid#fff;
+    box-shadow: 20px 15px 35px rgba(0,0,0,0.8);
+}
+.menu .contenu .box .inbox{
+    position: relative;
+    width: 100%;
+
+}
+.menu .contenu .box .inbox img{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    animation: glisse 15s infinite ease; 
+}
+.menu .contenu .box .text{
+    text-align: center;
+    font-weight: 300px;
+    color: #111;
+}
+.menu .contenu .box .text h3{
+    font-size: 400;
+}
